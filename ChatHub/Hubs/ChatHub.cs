@@ -7,7 +7,7 @@ namespace ChatHub.Hubs
     {
         public async Task Send(string user, string message)
         {
-           await Clients.All.SendAsync(user, message);
+           await Clients.All.SendAsync("ReceiveMessage",user, message); //Fire Event
         }
     }
 }
