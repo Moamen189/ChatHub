@@ -2,8 +2,8 @@
     var messageInp = document.getElementById("messageInp");
     var userName = prompt("Please Enter Your Name : ");
     messageInp.focus();
-
-    var proxyConnection = new signalR.HubConnectionBuider().withUrl("https://localhost:44334/chat").build(); //Create Proxy
+    /*https://localhost:44334*/
+    var proxyConnection = new signalR.HubConnectionBuider().withUrl("/chat").build(); //Create Proxy
   
     proxyConnection.start().then(function () {
         console.log("Connection Started Successflly");

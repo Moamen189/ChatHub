@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace ChatHub.Hubs
 {
-    public class ChatHub:Hub
+    public class ChatHubs:Hub
     {
         public async Task Send(string user, string message)
         {
